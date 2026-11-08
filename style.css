@@ -102,15 +102,55 @@ footer{border-top:1px solid var(--line);padding:30px 0 48px;color:var(--ink-soft
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-/* ---------- research projects ---------- */
-.project{padding:26px 0;border-bottom:1px solid var(--line)}
-.project:last-child{border-bottom:0;padding-bottom:6px}
-.project:first-of-type{padding-top:0}
-.project h3{font-size:24px;font-weight:600;margin:0 0 8px;letter-spacing:-.2px}
-.project p{margin:0 0 16px}
-.project .fig{margin:0 0 14px}
-.project .fig a{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+/* ---------- readability ---------- */
+/* EDIT DESIGN: colors are in :root; adjust reading width and spacing here. */
+.wrap{max-width:840px}
+section{scroll-margin-top:80px}
+section > p{max-width:68ch}
+p a{text-underline-offset:3px;text-decoration:underline;text-decoration-thickness:1px}
+.socials a,.links a{text-decoration:none}
+.label{font-size:14px;letter-spacing:2px}
+@media(max-width:640px){
+  body{font-size:18px;line-height:1.65}
+  .wrap{padding-left:20px;padding-right:20px}
+  nav ul{gap:18px;justify-content:center}
+  nav ul a{display:inline-flex;align-items:center;min-height:44px}
+  section{padding:32px 0}
+}
+@media(max-width:360px){nav ul{gap:12px}nav ul a{font-size:15px}}
+
+/* ---------- expandable research projects ---------- */
+.research-intro{color:var(--ink-soft);margin:0 0 22px}
+.research-intro h3{color:var(--ink);font-size:21px;font-weight:600;margin:0 0 10px}
+.research-intro ul{margin:0;padding-left:22px}
+.research-intro li + li{margin-top:12px}
+.research-intro strong{color:var(--ink);font-weight:600}
+.project{padding:20px 0;border-top:1px solid var(--line)}
+.project:last-child{border-bottom:1px solid var(--line)}
+.project summary,.project-poster-link{
+  display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:18px;
+  align-items:center;min-height:44px;
+}
+.project summary{list-style:none;cursor:pointer}
+.project summary::-webkit-details-marker{display:none}
+.project-title{display:block;font-size:24px;font-weight:600;line-height:1.25;letter-spacing:-.2px;color:var(--ink)}
+.project-summary{display:block;color:var(--ink-soft);font-size:18px;line-height:1.5;margin-top:5px}
+.project-toggle,.project-arrow{color:var(--accent);font-size:27px;text-align:center;line-height:1}
+.project-toggle::before{content:'+'}
+.project details[open] .project-toggle::before{content:'−'}
+.project summary:hover .project-title,.project-poster-link:hover .project-title{color:var(--accent)}
+.project-poster-link{border:0}
+.project-meta{margin:10px 0 0;color:var(--ink-soft);font-size:16px}
+.project-content{padding-top:18px}
+.project-content p{margin:0 0 16px}
+.project .fig{margin:0 0 16px}
+.project .fig a{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
 .project .fig img{display:block;width:100%;height:auto}
-.project .links{display:flex;gap:18px;flex-wrap:wrap;font-size:16px;margin:0}
-.project .links a{border:0;font-weight:500}
-.project .links a:hover{border-bottom:1px solid var(--ochre)}
+.project .links{display:flex;gap:8px 22px;flex-wrap:wrap;font-size:17px;margin:10px 0 0}
+.project .links a{display:inline-flex;align-items:center;min-height:32px;border:0;font-weight:500}
+.project .links a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:640px){
+  .project-title{font-size:22px}
+  .project-summary{font-size:17px}
+  .project .links a{min-height:44px}
+}

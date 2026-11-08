@@ -94,85 +94,147 @@
 
 
   <!-- ═══════════════  RESEARCH  ═══════════════ -->
-  <!-- To add a project: copy one whole <article class="project"> ... </article> block.
-       To swap a figure: replace the image file in the images/ folder, or change the src. -->
+  <!-- EDIT RESEARCH: projects appear in the order below.
+       Move an entire <article> block to reorder; copy one to add a project.
+       The title and short summary stay visible. Details and figures expand on click.
+       Keep each details id unique and name="research-project" the same. -->
   <section id="research">
     <h2 class="label">Research</h2>
+    <!-- EDIT RESEARCH FOCUS: update the two themes below. -->
+    <div class="research-intro">
+      <ul>
+        <li><strong>Bio-AI for Cancer Research:</strong> Developing interpretable AI approaches, including biological foundation models, for cancer genomics, biomarker discovery, disease risk prediction, and therapeutic target identification. Using agentic approaches to make findings easier to discover and use.</li>
+        <li><strong>Computational Biology &amp; Statistical Genomics:</strong> Understanding tissue-specific interactions across species and their dysregulation in cancer, with a focus on the non-coding genome.</li>
+      </ul>
+    </div>
 
-    <!-- ---- project: TransTEx ---- -->
+    <!-- EDIT ONKOLOOP: upload the PDF to docs/CAFCW_OnKoLoop.pdf.
+         This project opens the poster directly in a new tab. -->
+    <article class="project project-poster">
+      <a class="project-poster-link" href="docs/CAFCW_OnKoLoop.pdf" target="_blank" rel="noopener noreferrer" aria-label="OnKoLoop — CAFCW SC2026 poster (PDF, opens in a new tab)">
+        <span>
+          <span class="project-title">OnKoLoop</span>
+          <span class="project-summary">Accelerating cancer research with agentic AI.</span>
+        </span>
+        <span class="project-arrow" aria-hidden="true">↗</span>
+      </a>
+      <p class="links"><a href="docs/CAFCW_OnKoLoop.pdf" target="_blank" rel="noopener noreferrer">CAFCW SC26 Poster ↗</a></p>
+    </article>
+
+    <!-- EDIT PROJECT: PGViS -->
     <article class="project">
-      <h3>TransTEx — tissue-specificity scoring</h3>
-      <p>
+      <details id="pgvis" name="research-project">
+        <summary>
+          <span>
+            <span class="project-title">PGViS</span>
+            <span class="project-summary">Scoring personal regulatory risk in lung cancer genomes.</span>
+          </span>
+          <span class="project-toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="project-content">
+          <p>
+            A framework that quantifies individual non-coding germline regulatory risk in
+            non-small cell lung cancer (NSCLC). Each signal is weighted by cohort prevalence
+            and aggregated into a single ancestry-matched, reference-normalized score per patient.
+          </p>
+          <figure class="fig">
+        <a href="images/research-PGViS.png" target="_blank" rel="noopener">
+          <img loading="lazy" src="images/research-PGViS.png" alt="PGViS: personal genome variant interpretation scoring framework" />
+        </a>
+      </figure>
+        </div>
+      </details>
+      <p class="links">
+        <a href="https://doi.org/10.64898/2026.08.01.742250">Paper ↗</a>
+      </p>
+    </article>
+
+    <!-- EDIT PROJECT: Isoform Tumor Expression in Solid Tumor -->
+    <article class="project">
+      <details id="isoform-tumor" name="research-project">
+        <summary>
+          <span>
+            <span class="project-title">Isoform Tumor Expression in Solid Tumor</span>
+            <span class="project-summary">Discovering transcript-level biomarkers in cancer.</span>
+          </span>
+          <span class="project-toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="project-content">
+          <p>
+        Extends TransTEx to tumors, contrasting normal and cancer expression groups to nominate
+        transcript-level biomarkers — oncogenes, tumor suppressors, and cancer-testis antigens —
+        with applications in solid-tumor clustering and pan-glioma classification.
+      </p>
+          <figure class="fig">
+        <a href="images/research-stpcat.png" target="_blank" rel="noopener">
+          <img loading="lazy" src="images/research-stpcat.png" alt="STPCaT: normal vs cancer TransTEx groups and biomarker discovery" />
+        </a>
+      </figure>
+        </div>
+      </details>
+      <p class="links">
+        <a href="https://www.biorxiv.org/content/10.64898/2026.05.04.722705v2.full">Paper ↗</a>
+      </p>
+    </article>
+
+    <!-- EDIT PROJECT: TSProm -->
+    <article class="project">
+      <details id="tsprom" name="research-project">
+        <summary>
+          <span>
+            <span class="project-title">TSProm</span>
+            <span class="project-summary">Decoding the DNA regulatory logic of tissue specificity.</span>
+          </span>
+          <span class="project-toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="project-content">
+          <p>
+        A deep-learning framework that learns the DNA regulatory grammar behind tissue-specific
+        promoters across species, using interpretable attention to surface the motifs and
+        transcription-factor families that drive specificity. Published in
+        <em>NAR Genomics and Bioinformatics</em>.
+      </p>
+          <figure class="fig">
+        <a href="images/research-tsprom.png" target="_blank" rel="noopener">
+          <img loading="lazy" src="images/research-tsprom.png" alt="TSProm: deep-learning framework for tissue-specific regulatory logic" />
+        </a>
+      </figure>
+        </div>
+      </details>
+      <p class="links">
+        <a href="https://academic.oup.com/nargab/article/8/2/lqag050/8701108">Paper ↗</a>
+      </p>
+    </article>
+
+    <!-- EDIT PROJECT: TransTEx -->
+    <article class="project">
+      <details id="transtex" name="research-project">
+        <summary>
+          <span>
+            <span class="project-title">TransTEx</span>
+            <span class="project-summary">Mapping tissue-specific transcript expression.</span>
+          </span>
+          <span class="project-toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="project-content">
+          <p>
         A statistical method that groups the human transcriptome into distinct expression
         classes — tissue-specific, tissue-enhanced, widespread, lowly expressed, and null.
         Presented at the Great Lakes Bioinformatics Conference (ISCB), Pittsburgh, PA.
       </p>
-      <figure class="fig">
+          <figure class="fig">
         <a href="images/research-transtex.png" target="_blank" rel="noopener">
-          <img src="images/research-transtex.png" alt="TransTEx: grouping transcripts into tissue-specific expression classes" />
+          <img loading="lazy" src="images/research-transtex.png" alt="TransTEx: grouping transcripts into tissue-specific expression classes" />
         </a>
       </figure>
+        </div>
+      </details>
       <p class="links">
         <a href="https://pallavisurana1.github.io/TransTEx_datasets/">Datasets ↗</a>
         <a href="https://www.youtube.com/watch?v=p4S01JPJHsU">Talk ↗</a>
         <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11319638/">Paper ↗</a>
       </p>
     </article>
-
-    <!-- ---- project: TSProm ---- -->
-    <article class="project">
-      <h3>TSProm — decoding tissue-specific regulatory logic</h3>
-      <p>
-        A deep-learning framework that learns the DNA regulatory grammar behind tissue-specific
-        promoters across species, using interpretable attention to surface the motifs and
-        transcription-factor families that drive specificity. Published in
-        <em>NAR Genomics and Bioinformatics</em>.
-      </p>
-      <figure class="fig">
-        <a href="images/research-tsprom.png" target="_blank" rel="noopener">
-          <img src="images/research-tsprom.png" alt="TSProm: deep-learning framework for tissue-specific regulatory logic" />
-        </a>
-      </figure>
-      <p class="links">
-        <a href="https://academic.oup.com/nargab/article/8/2/lqag050/8701108">Paper ↗</a>
-      </p>
-    </article>
-
-    <!-- ---- project: STPCaT ---- -->
-    <article class="project">
-      <h3>STPCaT — transcript biomarkers in cancer</h3>
-      <p>
-        Extends TransTEx to tumors, contrasting normal and cancer expression groups to nominate
-        transcript-level biomarkers — oncogenes, tumor suppressors, and cancer-testis antigens —
-        with applications in solid-tumor clustering and pan-glioma classification.
-      </p>
-      <figure class="fig">
-        <a href="images/research-stpcat.png" target="_blank" rel="noopener">
-          <img src="images/research-stpcat.png" alt="STPCaT: normal vs cancer TransTEx groups and biomarker discovery" />
-        </a>
-      </figure>
-      <p class="links">
-        <a href="https://www.biorxiv.org/content/10.64898/2026.05.04.722705v2.full">Paper ↗</a>
-      </p>
-    </article>
-
-    <!-- ---- project: STPCaT ---- -->
-    <article class="project">
-      <h3>PGViS: Personal Genome Variant interpretation Score for lung cancer genomes</h3>
-      <p>
-        A framework that quantifies individual non-coding germline regulatory risk in non small cell lung cancer (NSCLC). 
-        Each signal is weighted by cohort prevalence which are aggregated into a single ancestry matched, reference normalized score per patient.
-      </p>
-      <figure class="fig">
-        <a href="images/research-PGViS.png" target="_blank" rel="noopener">
-          <img src="images/research-PGViS.png" alt="STPCaT: normal vs cancer TransTEx groups and biomarker discovery" />
-        </a>
-      </figure>
-      <p class="links">
-        <a href="https://doi.org/10.64898/2026.08.01.742250">Paper ↗</a>
-      </p>
-    </article>
-
 
   </section>
 
