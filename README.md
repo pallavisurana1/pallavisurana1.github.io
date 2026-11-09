@@ -41,3 +41,15 @@ Upload the poster as **`docs/CAFCW_OnKoLoop.pdf`**, matching capitalization exac
 Open `index.html` in a browser to preview. Try each research row, the paper links, and a narrow window to check the mobile layout.
 
 Commit and push the changed files to the branch used by GitHub Pages to publish them. Upload the OnKoLoop PDF before publishing if you want its link available immediately.
+
+## OnKoLoop project page
+
+Clicking the OnKoLoop title opens `onkoloop.html`. The separate **CAFCW SC26 Poster ↗** link still opens the PDF directly in a new tab.
+
+Edit `onkoloop.html` to grow the project page:
+
+- `EDIT PROJECT INTRO`: update the introductory text.
+- `EDIT POSTER`: the PDF is embedded here; upload `docs/CAFCW_OnKoLoop.pdf` to enable the preview. A direct PDF link is also available for browsers without embedded PDF support.
+- `EDIT FUTURE CONTENT`: replace the overview placeholder and copy the section to add methods, findings, or resources.
+
+The page shares `style.css` with the homepage, so site-wide design updates apply to both.
