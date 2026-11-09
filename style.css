@@ -160,8 +160,8 @@ p a{text-underline-offset:3px;text-decoration:underline;text-decoration-thicknes
 .project-page-intro h1{margin-bottom:16px}
 .project-page-intro .label{margin-bottom:12px}
 .project-page-note{color:var(--ink-soft)}
-.poster-viewer{display:block;width:100%;height:760px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.poster-preview{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.poster-preview img{display:block;width:100%;height:auto}
 @media(max-width:640px){
   .project-page-intro{padding-top:32px}
-  .poster-viewer{height:520px}
 }

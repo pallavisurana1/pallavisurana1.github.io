@@ -27,7 +27,7 @@ Projects appear in this order: OnKoLoop, PGViS, Isoform Tumor Expression in Soli
 
 ### OnKoLoop poster
 
-Upload the poster as **`docs/CAFCW_OnKoLoop.pdf`**, matching capitalization exactly. The OnKoLoop row already links to that path and opens it in a new tab. It links to the PDF on the website, rather than the GitHub file viewer. The link will work once that file is uploaded and published.
+Upload the poster as **`docs/CAFCW_OnKoLoop.pdf`**, matching capitalization exactly. Poster links open the GitHub PDF viewer in a new tab. Commit and push the PDF to `main` to update that viewer.
 
 ## Other edits
 
@@ -44,12 +44,12 @@ Commit and push the changed files to the branch used by GitHub Pages to publish 
 
 ## OnKoLoop project page
 
-Clicking the OnKoLoop title opens `onkoloop.html`. The separate **CAFCW SC26 Poster ↗** link still opens the PDF directly in a new tab.
+Clicking the OnKoLoop title opens `onkoloop.html`. The separate **CAFCW SC26 Poster ↗** link still opens the GitHub PDF viewer in a new tab.
 
 Edit `onkoloop.html` to grow the project page:
 
 - `EDIT PROJECT INTRO`: update the introductory text.
-- `EDIT POSTER`: the PDF is embedded here; upload `docs/CAFCW_OnKoLoop.pdf` to enable the preview. A direct PDF link is also available for browsers without embedded PDF support.
+- `EDIT POSTER`: the page displays `images/onkoloop-poster.jpg` and links to the GitHub viewer for `docs/CAFCW_OnKoLoop.pdf`. Replace both when updating the poster. The image preview works without browser PDF support.
 - `EDIT FUTURE CONTENT`: replace the overview placeholder and copy the section to add methods, findings, or resources.
 
 The page shares `style.css` with the homepage, so site-wide design updates apply to both.
