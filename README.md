@@ -53,3 +53,12 @@ Edit `onkoloop.html` to grow the project page:
 - `EDIT FUTURE CONTENT`: replace the overview placeholder and copy the section to add methods, findings, or resources.
 
 The page shares `style.css` with the homepage, so site-wide design updates apply to both.
+
+## PhD Research page
+
+`phd-research.html` contains the expanded PhD story, organized into TransTEx, tumor isoforms, evolution, TSProm, and PGViS. Each homepage project's **More info ↗** link goes to its matching section on this page.
+
+- Edit the clearly marked `EDIT` sections to update the scientific text.
+- Replace `images/phd-theme.png` and `docs/PhD_theme.pdf` together to update the theme diagram.
+- Each project reuses its existing figure in `images/` and paper links.
+- Keep the section IDs (`transtex`, `isoform-tumor`, `evolution`, `tsprom`, `pgvis`) stable so homepage links continue working.

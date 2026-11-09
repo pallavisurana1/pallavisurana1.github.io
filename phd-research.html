@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PhD Research — Pallavi Surana</title>
+  <meta name="description" content="PhD research on tissue-specific gene regulation, isoform expression, cancer biomarkers, and genomic AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Project navigation">
+      <a href="index.html" class="brand">Pallavi Surana</a>
+      <ul>
+        <li><a href="index.html#research">← All research</a></li>
+        <li><a href="#transtex">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap project-page phd-page">
+  <!-- EDIT INTRODUCTION: the scientific motivation for this PhD work. -->
+  <div class="project-page-intro">
+    <p class="label">PhD Research</p>
+    <p class="project-page-note">Stony Brook University · Biomedical Informatics</p>
+    <h1>Unraveling tissue-specific gene regulation using AI</h1>
+    <p class="lead">From isoform expression and regulatory language to cancer biomarkers and personal genome risk.</p>
+    <p><a href="https://www.proquest.com/openview/7e5bf5b5c2ad7a9390e774297c883795/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener noreferrer">Read the PhD thesis ↗</a></p>
+    <p>Genes show distinct expression patterns across tissues despite sharing many core molecular processes. These differences suggest that tissue-specific gene regulation relies on distinct regulatory modules and combinations of cis-regulatory elements. Alternative splicing and transcriptional regulation also generate multiple isoforms of a gene, making it essential to study expression at the individual isoform level.</p>
+  </div>
+
+  <!-- EDIT THEME DIAGRAM: replace the PNG and PDF together when updating. -->
+  <figure class="phd-theme">
+    <a href="docs/PhD_theme.pdf" target="_blank" rel="noopener" aria-label="Open the PhD theme diagram PDF">
+      <img src="images/phd-theme.png" alt="PhD theme diagram connecting TransTEx, IsoTumorEx, mammalian conservation of isoform expression, TSProm, and PGViS to tissue-specific gene regulation using AI." />
+    </a>
+    <figcaption>How the projects connect across tissue specificity, evolution, and cancer.</figcaption>
+  </figure>
+
+  <nav class="phd-jump-links" aria-label="PhD project sections">
+    <a href="#transtex">TransTEx</a>
+    <a href="#isoform-tumor">Tumor isoforms</a>
+    <a href="#evolution">Evolution</a>
+    <a href="#tsprom">TSProm</a>
+    <a href="#pgvis">PGViS</a>
+  </nav>
+
+  <!-- EDIT TRANSTEX -->
+  <section id="transtex" class="phd-project">
+    <h2>TransTEx</h2>
+    <p class="project-summary">Establishing a framework for tissue-specific transcript expression.</p>
+    <p>To address the lack of a gold-standard method for identifying tissue-specific transcripts, I developed Transcript-level Tissue Expression (TransTEx). It classifies the normal human transcriptome into five expression groups, ranging from minimal to tissue-specific expression: null, lowly expressed, widespread, tissue-enhanced, and tissue-specific.</p>
+    <p>This framework provides a foundation for examining tissue-specific regulatory features, including promoter usage, and how their disruption in cancer may reveal mechanisms of oncogenesis and context-dependent therapeutic targets.</p>
+    <figure class="phd-figure"><a href="images/research-transtex.png" target="_blank" rel="noopener"><img src="images/research-transtex.png" alt="TransTEx transcript expression classes across tissues" loading="lazy" /></a></figure>
+    <p class="phd-resource-links"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11319638/">Paper ↗</a><a href="https://pallavisurana1.github.io/TransTEx_datasets/">Datasets ↗</a><a href="https://www.youtube.com/watch?v=p4S01JPJHsU">Talk ↗</a></p>
+  </section>
+
+  <!-- EDIT TUMOR ISOFORMS: the diagram labels this work IsoTumorEx;
+       the existing figure and paper were previously listed as STPCaT. -->
+  <section id="isoform-tumor" class="phd-project">
+    <h2>Isoform Tumor Expression in Solid Tumor</h2>
+    <p class="project-summary">Identifying transcript-level biomarkers and therapeutic targets.</p>
+    <p>Analysis of high and low transcript expression across pan-cancer transcriptomes identified cancer-testis antigen targets with biomarker potential in pan-gliomas. Studying isoform biomarker groups and protein alterations in extracellular domains highlights additional opportunities for target discovery.</p>
+    <p>This work extends tissue-specific expression analysis to cancer, connecting altered isoform expression with potential applications in biomarker discovery and cancer signaling regulation.</p>
+    <figure class="phd-figure"><a href="images/research-stpcat.png" target="_blank" rel="noopener"><img src="images/research-stpcat.png" alt="Normal and cancer transcript expression groups for isoform biomarker discovery" loading="lazy" /></a></figure>
+    <p class="phd-resource-links"><a href="https://www.biorxiv.org/content/10.64898/2026.05.04.722705v2.full">Paper ↗</a></p>
+  </section>
+
+  <!-- EDIT EVOLUTION -->
+  <section id="evolution" class="phd-project">
+    <h2>Evolution of brain-specific isoforms</h2>
+    <p>Do tissue-specific expression patterns extend to close relatives of humans? To explore this question, I analyzed the evolutionary landscape of brain-specific isoforms. Diverged transcripts showed exon loss within otherwise conserved genes, emphasizing the importance of examining conservation at the isoform level.</p>
+  </section>
+
+  <!-- EDIT TSPROM -->
+  <section id="tsprom" class="phd-project">
+    <h2>TSProm</h2>
+    <p class="project-summary">Interpreting the regulatory language of tissue-specific promoters.</p>
+    <p>To investigate the less-understood non-coding genome in tissue-specific transcription initiation, I developed TSProm, an interpretable framework based on genomic large language models (gLMs).</p>
+    <p>TSProm uncovered key transcription factor motifs, their families, and interactors, revealing master regulators in the brain and their dysregulation in pan-gliomas. These findings connect promoter sequence features with tissue-specific regulatory circuitry and its disruption in cancer.</p>
+    <figure class="phd-figure"><a href="images/research-tsprom.png" target="_blank" rel="noopener"><img src="images/research-tsprom.png" alt="TSProm framework for interpreting tissue-specific regulatory sequences" loading="lazy" /></a></figure>
+    <p class="phd-resource-links"><a href="https://academic.oup.com/nargab/article/8/2/lqag050/8701108">Paper ↗</a></p>
+  </section>
+
+  <!-- EDIT PGVIS -->
+  <section id="pgvis" class="phd-project">
+    <h2>PGViS</h2>
+    <p class="project-summary">Translating non-coding variation into individual genomic risk assessment.</p>
+    <p>Harnessing the clinical potential of gLMs, this work examines how short mutations in cancer whole genomes disrupt splice sites and transcription factor binding sites.</p>
+    <p>The Personal Genome Variant Interpretation Score combines deep-learning predictions across non-coding sites with smoking status, germline mutations, and carcinogen exposure to provide an individual-level genomic risk assessment.</p>
+    <figure class="phd-figure"><a href="images/research-PGViS.png" target="_blank" rel="noopener"><img src="images/research-PGViS.png" alt="PGViS framework for personal genome variant interpretation and lung cancer risk" loading="lazy" /></a></figure>
+    <p class="phd-resource-links"><a href="https://doi.org/10.64898/2026.08.01.742250">Paper ↗</a></p>
+  </section>
+
+  <!-- EDIT OVERALL CONTRIBUTION -->
+  <section class="phd-project" id="contribution">
+    <h2>Overall contribution</h2>
+    <p>This research develops statistical and deep-learning informatics methods to understand tissue-specific gene regulation, its cis-regulatory landscape and interactors, and its roles in cancer and evolution. Clinically, it contributes AI-based frameworks for developing personal genome risk scores in cancer.</p>
+  </section>
+</main>
+<footer class="wrap">
+  <span>Pallavi Surana · UChicago · ANL</span>
+  <a href="index.html#research">← All research</a>
+</footer>
+</body>
+</html>

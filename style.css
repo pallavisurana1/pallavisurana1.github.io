@@ -165,3 +165,16 @@ p a{text-underline-offset:3px;text-decoration:underline;text-decoration-thicknes
 @media(max-width:640px){
   .project-page-intro{padding-top:32px}
 }
+
+/* ---------- PhD research page ---------- */
+.phd-page h1{font-size:40px;line-height:1.15}
+.phd-theme{margin:0 0 24px}
+.phd-theme img,.phd-figure img{display:block;width:100%;height:auto}
+.phd-theme figcaption{font-size:16px;color:var(--ink-soft);margin-top:10px}
+.phd-jump-links{height:auto;justify-content:flex-start;flex-wrap:wrap;gap:10px 24px;padding:16px 0;border-top:1px solid var(--line);font-size:17px}
+.phd-jump-links a{min-height:32px;display:inline-flex;align-items:center}
+.phd-project h2{font-size:28px;line-height:1.25;margin-bottom:12px;font-weight:600}
+.phd-project .project-summary{margin-bottom:18px;font-style:italic}
+.phd-figure{margin:24px 0 16px}
+.phd-resource-links{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:17px}
+@media(max-width:640px){.phd-page h1{font-size:32px}.phd-project h2{font-size:25px}.phd-jump-links a{min-height:44px}}
