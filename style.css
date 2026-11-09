@@ -156,6 +156,7 @@ p a{text-underline-offset:3px;text-decoration:underline;text-decoration-thicknes
 }
 
 /* ---------- individual project pages ---------- */
+.talk-link{margin-top:12px}
 .project-page-intro{padding:48px 0 28px}
 .project-page-intro h1{margin-bottom:16px}
 .project-page-intro .label{margin-bottom:12px}
