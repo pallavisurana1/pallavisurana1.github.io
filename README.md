@@ -18,12 +18,11 @@ Search for `EDIT RESEARCH` in `index.html`.
 
 Projects appear in this order: OnKoLoop, PGViS, Isoform Tumor Expression in Solid Tumor, TSProm, TransTEx.
 
-- **Change order:** move the entire project's `<article class="project"> ... </article>` block.
-- **Change text:** edit `project-title`, `project-summary`, and the paragraph in `project-content`.
-- **Change a figure:** replace its image in `images/`, or update both the figure's `href` and image `src`. Update `alt` to describe the figure.
-- **Change paper or dataset links:** edit the links in `<p class="links">`. They stay visible when details are closed.
-- **Add an expandable project:** copy a complete expandable project block, give its `<details>` a unique `id`, and keep `name="research-project"`. This lets one project open at a time in current browsers. Content remains usable without JavaScript.
-- **Rename a project:** its title is independent of its figure filename, so existing image files can keep their names.
+- **Change order:** move an entire project's `<article> ... </article>` block.
+- **Change card text:** edit `project-title` and `project-summary`.
+- **Change destination:** edit the card's `href`. Each shaded PhD card opens its matching section in `phd-research.html`.
+- **Add a PhD card:** copy a `phd-project-card` block and update its unique `id`, title, summary, accessible label, and destination.
+- **Edit project descriptions, figures, or paper links:** update the corresponding section in `phd-research.html`.
 
 ### OnKoLoop poster
 
@@ -56,9 +55,11 @@ The page shares `style.css` with the homepage, so site-wide design updates apply
 
 ## PhD Research page
 
-`phd-research.html` contains the expanded PhD story, organized into TransTEx, tumor isoforms, evolution, TSProm, and PGViS. Each homepage project's **More info ↗** link goes to its matching section on this page.
+`phd-research.html` contains the expanded PhD story, organized into TransTEx, tumor isoforms, evolution, TSProm, and PGViS. Each shaded homepage project card links to its matching section on this page.
 
 - Edit the clearly marked `EDIT` sections to update the scientific text.
 - Replace `images/phd-theme.png` and `docs/PhD_theme.pdf` together to update the theme diagram.
 - Each project reuses its existing figure in `images/` and paper links.
 - Keep the section IDs (`transtex`, `isoform-tumor`, `evolution`, `tsprom`, `pgvis`) stable so homepage links continue working.
+
+OnKoLoop also uses a full clickable card, opening `onkoloop.html`. Its deeper sage color is set under `.onkoloop-card` in `style.css`; poster links are on the project page.

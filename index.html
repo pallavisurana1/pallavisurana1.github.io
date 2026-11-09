@@ -96,8 +96,8 @@
   <!-- ═══════════════  RESEARCH  ═══════════════ -->
   <!-- EDIT RESEARCH: projects appear in the order below.
        Move an entire <article> block to reorder; copy one to add a project.
-       The title and short summary stay visible. Details and figures expand on click.
-       Keep each details id unique and name="research-project" the same. -->
+       PhD project cards link to sections in phd-research.html.
+       Edit the title, summary, and destination in each card below. -->
   <section id="research">
     <h2 class="label">Research</h2>
     <!-- EDIT RESEARCH FOCUS: update the two themes below. -->
@@ -108,139 +108,60 @@
       </ul>
     </div>
 
-    <!-- EDIT ONKOLOOP: upload the PDF to docs/CAFCW_OnKoLoop.pdf.
-         The title opens the project page; the poster link opens the PDF. -->
-    <article class="project project-poster">
-      <a class="project-poster-link" href="onkoloop.html" aria-label="OnKoLoop project page">
+    <!-- EDIT ONKOLOOP: the whole card opens onkoloop.html.
+         Update the poster and project details on that page. -->
+    <article class="project phd-project-card onkoloop-card">
+      <a class="phd-card-link" href="onkoloop.html" aria-label="OnKoLoop — explore the project">
         <span>
           <span class="project-title">OnKoLoop</span>
           <span class="project-summary">Accelerating cancer research with agentic AI.</span>
         </span>
         <span class="project-arrow" aria-hidden="true">↗</span>
       </a>
-      <p class="links">
-        <a href="onkoloop.html">Project page ↗</a>
-        <a href="https://github.com/pallavisurana1/pallavisurana1.github.io/blob/main/docs/CAFCW_OnKoLoop.pdf" target="_blank" rel="noopener noreferrer">CAFCW SC26 Poster ↗</a>
-      </p>
     </article>
 
     <!-- EDIT PROJECT: PGViS -->
-    <article class="project">
-      <details id="pgvis" name="research-project">
-        <summary>
-          <span>
-            <span class="project-title">PGViS</span>
-            <span class="project-summary">Scoring personal regulatory risk in lung cancer genomes.</span>
-          </span>
-          <span class="project-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="project-content">
-          <p>
-            A framework that quantifies individual non-coding germline regulatory risk in
-            non-small cell lung cancer (NSCLC). Each signal is weighted by cohort prevalence
-            and aggregated into a single ancestry-matched, reference-normalized score per patient.
-          </p>
-          <figure class="fig">
-        <a href="images/research-PGViS.png" target="_blank" rel="noopener">
-          <img loading="lazy" src="images/research-PGViS.png" alt="PGViS: personal genome variant interpretation scoring framework" />
-        </a>
-      </figure>
-        </div>
-      </details>
-      <p class="links">
-        <a href="https://doi.org/10.64898/2026.08.01.742250">Paper ↗</a>
-              <a href="phd-research.html#pgvis">More info ↗</a>
-      </p>
+    <article class="project phd-project-card" id="pgvis">
+      <a class="phd-card-link" href="phd-research.html#pgvis" aria-label="PGViS — explore PhD research">
+        <span>
+          <span class="project-title">PGViS</span>
+          <span class="project-summary">Scoring personal regulatory risk in lung cancer genomes.</span>
+        </span>
+        <span class="project-arrow" aria-hidden="true">↗</span>
+      </a>
     </article>
 
     <!-- EDIT PROJECT: Isoform Tumor Expression in Solid Tumor -->
-    <article class="project">
-      <details id="isoform-tumor" name="research-project">
-        <summary>
-          <span>
-            <span class="project-title">Isoform Tumor Expression in Solid Tumor</span>
-            <span class="project-summary">Discovering transcript-level biomarkers in cancer.</span>
-          </span>
-          <span class="project-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="project-content">
-          <p>
-        Extends TransTEx to tumors, contrasting normal and cancer expression groups to nominate
-        transcript-level biomarkers — oncogenes, tumor suppressors, and cancer-testis antigens —
-        with applications in solid-tumor clustering and pan-glioma classification.
-      </p>
-          <figure class="fig">
-        <a href="images/research-stpcat.png" target="_blank" rel="noopener">
-          <img loading="lazy" src="images/research-stpcat.png" alt="STPCaT: normal vs cancer TransTEx groups and biomarker discovery" />
-        </a>
-      </figure>
-        </div>
-      </details>
-      <p class="links">
-        <a href="https://www.biorxiv.org/content/10.64898/2026.05.04.722705v2.full">Paper ↗</a>
-              <a href="phd-research.html#isoform-tumor">More info ↗</a>
-      </p>
+    <article class="project phd-project-card" id="isoform-tumor">
+      <a class="phd-card-link" href="phd-research.html#isoform-tumor" aria-label="Isoform Tumor Expression in Solid Tumor — explore PhD research">
+        <span>
+          <span class="project-title">Isoform Tumor Expression in Solid Tumor</span>
+          <span class="project-summary">Discovering transcript-level biomarkers in cancer.</span>
+        </span>
+        <span class="project-arrow" aria-hidden="true">↗</span>
+      </a>
     </article>
 
     <!-- EDIT PROJECT: TSProm -->
-    <article class="project">
-      <details id="tsprom" name="research-project">
-        <summary>
-          <span>
-            <span class="project-title">TSProm</span>
-            <span class="project-summary">Decoding the DNA regulatory logic of tissue specificity.</span>
-          </span>
-          <span class="project-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="project-content">
-          <p>
-        A deep-learning framework that learns the DNA regulatory grammar behind tissue-specific
-        promoters across species, using interpretable attention to surface the motifs and
-        transcription-factor families that drive specificity. Published in
-        <em>NAR Genomics and Bioinformatics</em>.
-      </p>
-          <figure class="fig">
-        <a href="images/research-tsprom.png" target="_blank" rel="noopener">
-          <img loading="lazy" src="images/research-tsprom.png" alt="TSProm: deep-learning framework for tissue-specific regulatory logic" />
-        </a>
-      </figure>
-        </div>
-      </details>
-      <p class="links">
-        <a href="https://academic.oup.com/nargab/article/8/2/lqag050/8701108">Paper ↗</a>
-              <a href="phd-research.html#tsprom">More info ↗</a>
-      </p>
+    <article class="project phd-project-card" id="tsprom">
+      <a class="phd-card-link" href="phd-research.html#tsprom" aria-label="TSProm — explore PhD research">
+        <span>
+          <span class="project-title">TSProm</span>
+          <span class="project-summary">Decoding the DNA regulatory logic of tissue specificity.</span>
+        </span>
+        <span class="project-arrow" aria-hidden="true">↗</span>
+      </a>
     </article>
 
     <!-- EDIT PROJECT: TransTEx -->
-    <article class="project">
-      <details id="transtex" name="research-project">
-        <summary>
-          <span>
-            <span class="project-title">TransTEx</span>
-            <span class="project-summary">Mapping tissue-specific transcript expression.</span>
-          </span>
-          <span class="project-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="project-content">
-          <p>
-        A statistical method that groups the human transcriptome into distinct expression
-        classes — tissue-specific, tissue-enhanced, widespread, lowly expressed, and null.
-        Presented at the Great Lakes Bioinformatics Conference (ISCB), Pittsburgh, PA.
-      </p>
-          <figure class="fig">
-        <a href="images/research-transtex.png" target="_blank" rel="noopener">
-          <img loading="lazy" src="images/research-transtex.png" alt="TransTEx: grouping transcripts into tissue-specific expression classes" />
-        </a>
-      </figure>
-        </div>
-      </details>
-      <p class="links">
-        <a href="https://pallavisurana1.github.io/TransTEx_datasets/">Datasets ↗</a>
-        <a href="https://www.youtube.com/watch?v=p4S01JPJHsU">Talk ↗</a>
-        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11319638/">Paper ↗</a>
-              <a href="phd-research.html#transtex">More info ↗</a>
-      </p>
+    <article class="project phd-project-card" id="transtex">
+      <a class="phd-card-link" href="phd-research.html#transtex" aria-label="TransTEx — explore PhD research">
+        <span>
+          <span class="project-title">TransTEx</span>
+          <span class="project-summary">Mapping tissue-specific transcript expression.</span>
+        </span>
+        <span class="project-arrow" aria-hidden="true">↗</span>
+      </a>
     </article>
 
   </section>

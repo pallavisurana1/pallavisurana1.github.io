@@ -178,3 +178,17 @@ p a{text-underline-offset:3px;text-decoration:underline;text-decoration-thicknes
 .phd-figure{margin:24px 0 16px}
 .phd-resource-links{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:17px}
 @media(max-width:640px){.phd-page h1{font-size:32px}.phd-project h2{font-size:25px}.phd-jump-links a{min-height:44px}}
+
+/* ---------- homepage PhD research cards ---------- */
+.phd-project-card{padding:0;margin-top:14px;border:1px solid var(--line);border-radius:10px;background:#F1F3ED;overflow:hidden}
+.phd-project-card:last-child{border-bottom:1px solid var(--line)}
+.phd-card-link{display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:18px;align-items:center;padding:22px 24px;border:0;transition:background .15s}
+.phd-card-link:hover{background:#E5EDE3;border:0}
+.phd-card-link:hover .project-title{color:var(--accent)}
+.phd-card-link:focus-visible{outline-offset:-4px}
+@media(max-width:640px){.phd-card-link{padding:20px 18px}}
+
+/* OnKoLoop uses a deeper sage green to distinguish it from the PhD projects. */
+.onkoloop-card{background:#DCE8D4;border-color:#C4D5BA}
+.onkoloop-card .phd-card-link:hover{background:#CCDEBF}
+.onkoloop-card .project-summary{color:#43513C}
